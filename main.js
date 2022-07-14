@@ -1,11 +1,11 @@
-// //! pantalla de carga
-// window.addEventListener("load", function () {
-//   const contentLoad = this.document.querySelector(".content_load");
+//! pantalla de carga
+window.addEventListener("load", function () {
+  const contentLoad = this.document.querySelector(".content_load");
 
-//   setTimeout(function () {
-//     contentLoad.style.display = "none";
-//   }, 4000);
-// });
+  setTimeout(function () {
+    contentLoad.style.display = "none";
+  }, 4000);
+});
 
 //! color del nav
 const containerNav = document.querySelector(".container_nav");
