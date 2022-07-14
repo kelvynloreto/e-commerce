@@ -178,7 +178,7 @@ body.darkmode .auxPBlack {
 .icon_Dm_car {
   left: 50%;
   position: relative;
-}
+  }
 
 .icon_Dm_car > div {
   display: flex;
@@ -198,7 +198,6 @@ body.darkmode .icon_Dm_car > div {
   background-color: var(--red);
   border-radius: 100%;
   z-index: 1000;
-  right: 65%;
   border: var(--white) solid 0.5px;
   transition: all 0.3s;
   cursor: pointer;
@@ -945,6 +944,9 @@ body.darkmode .btn:hover {
   .logo_page >p{
     font-size: 16px;
   }
+  .container_nav{
+    min-width: 400px;
+  }
 .logo_page img{
   width: 30px;
 }
@@ -961,12 +963,9 @@ body.darkmode .btn:hover {
     z-index: 2000;
     right: 0%;
     opacity: 0;
-    
     width: 400px;
-    height: 50vh;
-    
+    height: 96vh;
     z-index: 2100;
-    
     transition: all 0.5s;
     
   }  
@@ -980,17 +979,25 @@ body.darkmode .btn:hover {
   .box_menu {
     z-index: 2100;
     opacity: 1;
-    
+
+
   }
   .box_menu box-icon{
   position: absolute;
-  top:30%;
+  top:10%;
+left: 60%;
 
 
   }
   .icon_Dm_car{
- right: 0;
+ left: 20%;
   }
+
+  .header_description .info_price{
+    font-size: 18px;
+    margin: 15px
+  
+}
   .auxNav{
    max-width: 100%;
    }
@@ -1001,22 +1008,33 @@ body.darkmode .btn:hover {
    }
    .btn_add-cart {
     max-width: 120px ;
-    max-height: 50px;
+  
     justify-content: center;
     align-items: center;
     display: flex;
+
    }
-   .info_price{
-    font-size: 18px;
+   .cart{
+    position: absolute;
+    left: 130%;
+
    }
+  .contador_icon_cart{ 
+    position: absolute;
+    left: 160%;
+    top: 50%;
+  }
    .btn_discover{
-    max-width: 50px ;
-    max-height: 50px;
+    width: 100px;
+   
     padding: 0;
-    
+ 
+    color: var(--black);
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
   }
    .btn_add-cart p, .btn_discover p{
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     align-self: center;
     
@@ -1026,8 +1044,15 @@ body.darkmode .btn:hover {
  max-width: 50%;
  margin-top: 6em;
  }
+
 .header_img{
   max-width: 100%;
+  max-height: 100vh;
+}
+.header_btn{
+  
+  display: flex;
+  flex-wrap: wrap;
 }
 .header_description .header_tilte{
   font-size: 20px;
