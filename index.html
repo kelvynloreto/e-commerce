@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles..css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body id="home">
+  <!-- <div class="content_load">
+      <img src="./img/favicon.png" alt="walking">
+  </div>  -->
+  <div class="container">
+    <div class="container_nav">
+      <nav>
+        
+        <div class="logo_page">
+          <img src="./img/favicon.png" alt="" />
+          <p>STORE</p>
+          
+        </div>
+
+        <ul id="menu">
+          <li><a class="a_red" href="#home">Home</a></li>
+          <li><a href="#select" class="colorRed">Products</a></li>
+          
+        </ul>
+        <div class="box_menu">        <box-icon id="icon__menu" name='menu' rotate='180' ></box-icon>
+        </div>
+        <div class="icon_Dm_car">
+          <div>
+           
+            <div class="contorno"></div>
+            <box-icon name="sun" class="sun"></box-icon>
+            <box-icon name="moon" class="moon"></box-icon>
+          </div>
+          <div>
+            <box-icon name="cart" class="cart"></box-icon>
+            <div class="contador_icon_cart">0</div>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container_main-cart">
+      <div class="container_iconX">
+        <box-icon class="x-circle" name="x-circle" animation="tada" rotate="90" color="#9adde0"></box-icon>
+      </div>
+      <div class="bg_img_cart">
+
+      </div>
+      <p>My Cart</p>
+
+      <section class="contenerdor_productos_cart">
+
+      </section>
+      <div class="footer_cart">
+        <div id="amount"></div>
+        <div class="amaunt_items"></div>
+        <div>
+          <p class="total_cost"></p>
+        </div>
+        <button class="btn Checkout" id="edit" disabled>
+          <span>Checkout</span>
+        </button>
+      </div>
+
+    </div>
+
+    <header>
+      <div class="header_description">
+        <p class="header_tilte">New Sweatshirt</p>
+        <p class="header_tilte">COLLECTIONS 2022</p>
+        <p class="header_info">
+          Latest arrival of the new Hanes Midweight Crewneck sweatshirt
+          imported from the 2022 series, with a modern design.
+        </p>
+        <p class="info_price">$14.00</p>
+        <div class="header_btn">
+          <div class="btn_discover">
+            <p>Discover</p>
+          </div>
+          <div class="btn_add-cart">
+            <p>ADD TO CART</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="header_img">
+        <div class="container_img_header">
+          <img src="./img/home.png" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <div class="filters select">
+      <div class="separador" id="select"></div>
+      <div class="show_product" data-filter="all">
+        <p>Show All</p>
+        <p>show all products</p>
+      </div>
+      <div class="hr"></div>
+      <div class="show_product" data-filter=".hod">
+        <p>Hoodies</p>
+        <p>3 products</p>
+      </div>
+      <div class="hr"></div>
+      <div class="show_product" data-filter=".shrt">
+        <p>Shirts</p>
+        <p>4 products</p>
+      </div>
+      <div class="hr"></div>
+      <div class="show_product" data-filter=".swts">
+        <p>Sweatshirts</p>
+        <p>4 products</p>
+      </div>
+    </div>
+    <section class="products content_element">
+
+
+    </section>
+    <footer>
+      <div>
+        <div class="footer_info">
+          <p>Our information</p>
+
+          <p>Toluca - México</p>
+        </div>
+        <div class="footer_info">
+          <p>About Us</p>
+          <p class="p_cursor_pinter">Support Center</p>
+          <p class="p_cursor_pinter">Customer Support</p>
+          <p class="p_cursor_pinter">About Us</p>
+          <p class="p_cursor_pinter">Copy Right</p>
+        </div>
+        <div class="footer_info">
+          <p>Product</p>
+
+          <p class="p_cursor_pinter">Hoodies</p>
+          <p class="p_cursor_pinter">Shirts</p>
+          <p class="p_cursor_pinter">Sweatshirts</p>
+        </div>
+        <div class="footer_info">
+          <p>Social</p>
+          <div class="img_sr">
+            <div>
+              <a href="https://www.facebook.com" target="_blank"><img src="./img/facebook.png" alt="" /></a>
+            </div>
+            <div>
+              <a href="https://www.twitter.com" target="_blank"><img src="./img/ant-design_twitter-outlined.svg"
+                  alt="" /></a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com" target="_blank"><img src="./img/ant-design_instagram-filled.svg"
+                  alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>© ACADEMLO. All rigths reserved</p>
+    </footer>
+    <div>
+
+    </div>
+    <script src="./main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"
+      integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      mixitup(".content_element", {
+        selectors: {
+          target: '.element'
+        },
+        animation: {
+          duration: 300
+        },
+
+      }).filter("all")
+    </script>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+
+
+</body>
+
+</html>
