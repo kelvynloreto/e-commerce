@@ -578,6 +578,7 @@ body.darkmode .signo_mas:hover {
 .signo_mas:active {
   width: 45px;
   height: 45px;
+  z-index: 900;
 }
 
 .signo_mas img {
@@ -1130,7 +1131,9 @@ body.darkmode .btn:hover {
     justify-content: space-around;
     align-items: center;
   }
-
+.signo_mas{
+  z-index:900;
+}
   .shirts_card {
     max-width: 300px;
     min-width: 200px;
