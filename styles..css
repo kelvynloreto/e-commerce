@@ -974,14 +974,15 @@ body.darkmode .btn:hover {
     align-items: center;
     justify-content: center;
     transition: margin-top 0.5s;
-    top: -100%;
+    margin-right:-150%;
     z-index: 2000;
     right: 0%;
+    width: 350px;
+    top: 0;
     opacity: 0;
-    width: 400px;
     height: 80vh;
-    z-index: 2100;
-    transition: all 0.5s;
+    z-index: 2600;
+    transition: margin-right 1s , opacity 1s;
   }
 
   .btn_add-cart {
@@ -989,8 +990,9 @@ body.darkmode .btn:hover {
   }
 
   .show__menu {
-    top: 0%;
-    opacity: 1;
+      margin-right: 0%;
+      transition: margin-right 1s , opacity 1s;
+      opacity: 1;
   }
 
   body.darkmode .colorRed {
@@ -1002,7 +1004,7 @@ body.darkmode .btn:hover {
   }
 
   .box_menu {
-    z-index: 2100;
+    z-index: 2700;
     opacity: 1;
   }
 
