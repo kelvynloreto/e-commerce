@@ -37,11 +37,20 @@ iconMenu.addEventListener("click", function () {
 });
 
 //! dark mode boton
-const contorno = document.querySelector(".contorno");
 
-contorno.addEventListener("click", () => {
+const dMode= localStorage.getItem("DM") || false
+if (JSON.parse(dMode)) {
+  document.body.classList.add("darkmode");
+
+   }
+
+const contorno = document.querySelector(".contorno");
+contorno.addEventListener("click", () => { 
+  
   document.body.classList.toggle("darkmode");
   contorno.classList.toggle("dm_botton");
+  JSON.parse(dMode)? localStorage.setItem("DM", JSON.stringify(false)) : localStorage.setItem("DM", JSON.stringify(true));
+
 });
 
 //!pintar cartas en el contenedor
@@ -103,9 +112,9 @@ const contenerdorProductosCart = document.querySelector(
   ".contenerdor_productos_cart"
 );
 
+
 function paintCards() {
   let html = "";
-
   cards.forEach(({ id, img, tipo, price, stock }) => {
     html += `<div class="card card${[id]}">
 <div class="product_cart_img">
@@ -148,8 +157,9 @@ function paintCards() {
 </div>
 </div>`;
   });
-
+ 
   contenerdorProductosCart.innerHTML = html;
+
 }
 
 const iconsTrash = document.getElementById("icon_trash");
